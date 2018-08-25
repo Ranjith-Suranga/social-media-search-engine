@@ -1,0 +1,332 @@
+/*
+ *  Infoob (Socail Media Search Engine)
+ *  Main CSS for infoo.com
+ *  Developer: D.M.Ranjith Suranga (Sura-Boy)
+ *  Version: 1.0
+ *  Copyright © 2015 Infoob. All rights reserved.
+*/
+
+
+html,body{
+    padding:0px;
+    margin:0px;
+}
+
+html{
+    height:100%;
+}
+
+body{
+    position: relative;
+    min-height: 100%;
+}
+
+/* Header Area */
+
+header{
+    line-height:30px;
+    font-family: arial,sans-serif;
+    font-size:13px;
+}
+
+#header-nav{
+    float:right;
+    padding:0px;
+    margin:10px 30px;
+    visibility: hidden;
+}
+
+header.search-status{ 
+    background-color:#F1F1F1;
+    background-image:linear-gradient(to bottom,#F1F1F1,#F9F9F9);
+    height:59px;
+    border-bottom: 1px solid #E5E5E5;
+}
+
+header::after{
+    content:'';
+    display:block;
+    clear:both;
+}
+
+#header-nav li{
+    display:inline;
+    padding-right:10px;
+}
+
+#header-nav a:link,#header-nav a:visited{
+    color:#666;
+    text-decoration:none;
+}
+
+#header-nav a:hover{
+    text-decoration: underline;
+}
+
+#small-logo-holder{
+    float:left;
+    cursor: pointer;
+}
+
+/* Main Area */
+
+#logo-holder{
+    margin-top:80px;
+    text-align: center;
+}
+
+#logo-holder.search-status{
+    margin:0px;
+    width:140px;
+    margin-left:13px;
+}
+
+#logo-holder.search-status img{
+    width:140px;
+    height: 47px;
+}
+
+/* Search Box Area */
+
+/* Normal mode */
+
+#cse-search-box-form-id>div{
+    text-align: center;
+    margin:15px;
+}
+
+#cse-search-box-form-id>div:first-child{
+    min-width:320px;
+    width:40%;
+    margin:15px auto;
+    position: relative;
+}
+
+#btnSubmit1{
+    border:1px solid #F2F2F2;
+    border-radius: 2px;
+    padding:0px 16px;
+    background-color:#F2F2F2;
+    background-image:linear-gradient(to bottom,#F8F8F8, #F1F1F1);
+    color:#757575;
+    line-height:27px;
+    height:36px;
+    font-size:13px;
+    font-weight:bold;
+    font-family: arial,sans-serif;
+}
+
+#btnSubmit1:hover{
+    background-color:#f8f8f8;
+    border: 1px solid #c6c6c6;
+    box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+    background-image: linear-gradient(to bottom, #F8F8F8, #F1F1F1);
+    color: #222;    
+}
+
+#cse-search-input-box-id{
+    padding:8px 10px !important;
+    width:100%;
+    font-size:16px;
+    border: 1px solid #D9D9D9 !important;
+    background-position: 10px !important;
+    box-sizing: border-box;
+    border-radius: 2px;
+}
+
+#cse-search-input-box-id:focus{
+    border: 1px solid #4D90FE !important;
+}
+
+#tagline{
+    font-family: arial,sans-serif;
+    font-size:13px;
+    text-align:center;
+    margin-top:30px;
+}
+
+#tagline span{
+    font-size:smaller;
+    color:#9B9393;
+}
+
+#tagline span img{
+    vertical-align: bottom;
+}
+
+#search-result{
+    display:none;
+}
+
+/* Search Mode */
+
+#cse-search-box-form-id.search-status>div{
+    margin:0px;
+}
+
+#cse-search-box-form-id.search-status>div:first-child{
+    margin:0px;
+    float:left;
+    margin-top:10px;
+    min-width:420px;
+}
+
+#cse-search-box-form-id.search-status #btnSubmit1{
+    display:none;
+}
+
+#cse-search-box-form-id.search-status #cse-search-input-box-id{
+    padding-right:41px !important;
+}
+
+#btnSubmit2{
+    position: absolute;
+    width:40px;
+    font-size:16px;
+    top:0px;
+    right:0px;
+    bottom:0px;
+    border-style: none;
+    padding:8px;
+    border-top-right-radius: 2px;
+    border-bottom-right-radius: 2px;
+    background:#4285F4 url('../images/search_icn.png') no-repeat center;
+    display:none;
+}
+
+#btnSubmit2:hover{
+    background-color:#3B78E7;
+}
+
+#btnSubmit2:active{
+    background-color:#3367D6;
+    background-position: 60% 60%;
+}
+
+/* Footer Area */
+footer{
+    position: absolute;
+    bottom:0px;
+    left:0px;
+    right:0px;
+    line-height:40px;
+    border-top: 1px solid #E4E4E4;
+    background-color:#F2F2F2;
+    background-image: linear-gradient(to bottom, #F5F5F5, #F2F2F2);
+    font-family: arial,sans-serif;
+}
+
+#footer-nav{
+    margin:0px;
+    font-size:13px;
+    float:left;
+}
+
+#footer-nav a:link,#footer-nav a:visited{
+    color:#666;
+    text-decoration:none;
+}
+
+#footer-nav a:hover{
+    text-decoration: underline;
+}
+
+#footer-nav a:active{
+    color:red;
+}
+
+#copyright{
+    float:right;
+    margin-right:40px;
+    font-size:13px;
+    color:#666;
+}
+
+#footer-nav li{
+    display:inline;
+}
+
+#footer-nav li+li{
+    padding-left:20px;
+}
+
+/* Media Queries */
+
+@media all and (max-width:800px){
+    
+    #header-nav{
+        float:none;
+        text-align: center;
+        margin-top:0px;
+        padding-top:10px;
+    }
+    
+}
+
+@media all and (max-width:479px){
+    
+    #logo-holder{
+        margin-top:25px;
+    }
+    
+    #cse-search-box-form-id>div:first-child{
+        min-width:280px;
+    }
+    
+    #tagline span{
+        display:block;
+    }
+    
+    #footer-nav{
+        float:none;
+        padding-left:0px;
+        text-align:center;
+    }
+    
+    #copyright{
+        float:none;
+        margin:0px;
+        text-align: center;
+        display: block;
+    }
+    
+}
+
+@media all and (max-width:480px) and (orientation:landscape){
+    
+    #logo-holder{
+        margin-top:20px;
+    }
+    
+}
+
+@media all and (max-height:370px){
+    
+    #tagline{
+        display:none;
+    }
+    
+}
+
+@media all and (max-width:599px){
+        
+    header.search-status{ 
+        height:auto;
+        padding:10px;
+    }
+    
+    #small-logo-holder{
+        float:none;
+    }
+    
+    #logo-holder.search-status{
+        margin:0px auto;
+    }
+    
+    #cse-search-box-form-id.search-status>div:first-child{
+        float:none;
+        margin:0px auto;
+        min-width:90%;
+    }
+    
+}

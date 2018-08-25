@@ -1,0 +1,123 @@
+/*
+ *  Infoob (Socail Media Search Engine)
+ *  CSS for how-it-works.php of advertising landing page
+ *  Developer: D.M.Ranjith Suranga (Sura-Boy)
+ *  Version: 1.0
+ *  Copyright © 2015 Infoob. All rights reserved.
+*/
+
+body{
+    counter-reset: rs;
+}
+
+p{
+    margin:10px 0px;
+}
+
+.hiw.row::before,.hiw.row::after{
+    display:table;
+
+    content: " ";
+}
+
+.hiw.row::after{
+    clear:both;
+}
+
+.hiw.row+.hiw.row{
+    margin-bottom:90px;
+}
+
+#hiw-header{
+    margin-top:30px;
+    margin-bottom:30px;
+}
+
+#hiw-header h1{
+    position: relative;
+    margin:20px 0px;
+    float:left;
+
+    font-size:44px;
+    font-weight:300;
+    color :#444;
+}
+
+#hiw-header a{
+    position: relative;
+    float:right;
+    margin-top:32px;
+}
+
+.hiw h2::before{
+    position: absolute;
+    left:0px;
+
+    content: counter(rs) ". ";
+    counter-increment: rs;
+}
+
+.hiw-text-cell{
+    margin-left:30px;
+
+    font-size:13px;
+    color:#444;
+    line-height: 1.54;
+}
+
+.hiw-text-cell h2{
+    margin:0px;
+}
+
+.hiw-img-container{
+    text-align:center;
+}
+
+.hiw-img-container img{
+    max-width: 100%;
+}
+
+#hiw-row2-col1{
+    float:right;
+}
+
+#hiw-row2-col2{
+    float:left;
+}
+
+/*=================================================================================
+ *  Media Queries Section
+ */
+
+@media all and (max-width:1020px){
+
+    #hiw-header{
+        text-align: center;
+    }
+
+    #hiw-header>h1{
+        float:none;
+    }
+
+    #hiw-header>a{
+        float:none;
+        margin-top:0px
+    }
+
+}
+
+@media all and (max-width:767px){
+
+    #hiw-header h1{
+        font-size:35px;
+    }
+
+    .hiw.row+.hiw.row{
+        margin-bottom:30px;
+    }
+
+}
+
+/*
+ *  Media Queries Section
+ =================================================================================*/  

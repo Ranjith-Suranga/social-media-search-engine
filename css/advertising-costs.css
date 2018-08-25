@@ -1,0 +1,115 @@
+/*
+ *  Infoob (Socail Media Search Engine)
+ *  CSS for costs.php of advertising landing page
+ *  Developer: D.M.Ranjith Suranga (Sura-Boy)
+ *  Version: 1.0
+ *  Copyright © 2015 Infoob. All rights reserved.
+*/
+
+.row.cst{
+    margin-top:30px;
+    margin-bottom:30px;
+}
+
+.row.cst::before,.row.cst::after{
+    display:table;
+
+    content:" ";
+}
+
+.row.cst::after{
+    clear:both;
+}
+
+h1.cst{
+    position: relative;
+    margin:20px 0px;
+
+    font-size:44px;
+    font-weight:300;
+    color :#444;
+}
+
+.cst-text-cell p{
+    position: relative;
+    font-size:13px;
+    line-height: 1.54;
+    color:#444;
+}
+
+#cst-cal-wrapper{
+    position: relative;
+    padding-left: 15px;
+    padding-right: 15px; 
+    padding-top:10px;
+
+    font-size:13px;
+    color:#444;
+    line-height:1.54;
+
+    border-style: solid;
+    border-color: #FFE070;
+    border-width: 1px 3px;    
+    border-radius: 4px;
+    background-color: #FCFAF4;
+
+}
+
+#cst-cal-ad-type-wrapper{
+    position: relative;
+
+    margin-left:20px;
+}
+
+#cst-cal-ad-type-wrapper p{
+    margin:0px 0px 10px 0px;
+
+    font-size:12px;
+}
+
+.labels{
+    margin-top:5px;
+    margin-bottom: 5px;
+}
+
+label{
+    cursor: pointer;
+}
+
+select{
+    position: relative;
+    width:100%;
+    padding:2px; 
+    
+    border:1px solid #AAAAAA;
+    background-color:#FFE070;
+}
+
+select:hover,select:focus{
+    border: 1px solid #4D90FE;    
+}
+
+#cst-cal-output{
+    position: relative;
+    line-height: 3;
+
+    font-size: 22px;
+    text-align: center;
+}
+
+
+/*=================================================================================
+ *  Media Queries Section
+ */
+
+@media all and (max-width:767px){
+
+    h1.cst{
+        font-size:35px;
+    }
+
+}
+
+/*
+ *  Media Queries Section
+ =================================================================================*/  

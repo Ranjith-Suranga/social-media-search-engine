@@ -1,0 +1,647 @@
+/*
+ *  Infoob (Socail Media Search Engine)
+ *  CSS for advertise.php
+ *  Developer: D.M.Ranjith Suranga (Sura-Boy)
+ *  Version: 1.0
+ *  Copyright © 2015 Infoob. All rights reserved.
+*/
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+@import url(https://fonts.googleapis.com/css?family=Shadows+Into+Light);
+
+*{
+    font-family: 'Open Sans', sans-serif;
+}
+
+html,body{
+    padding:0px;
+    margin:0px;
+}
+
+html{
+    height: 100%;
+}
+
+body{
+    position: relative;
+    min-height: 100%;
+}
+
+.row{
+    max-width:1000px;
+    margin:0 auto;
+}
+
+.row .header-row{
+    line-height:35px;
+}
+
+.art-text{
+    font-family: 'Shadows Into Light', 'Open Sans', cursive;
+    color: #06F;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.h-line{
+    background-color:#AAAAAA;
+    height:1px;
+}
+
+.disabled-text{
+    color:#666;
+}
+
+/* Header Area */
+
+header{
+    background-color:#F5F5F5;
+    background-image:-webkit-linear-gradient(top, #FAFAFA, #F5F5F5);
+    background-image:   -moz-linear-gradient(top, #FAFAFA, #F5F5F5);
+    background-image:     -o-linear-gradient(top, #FAFAFA, #F5F5F5);    
+    background-image:   linear-gradient(to bottom, #FAFAFA,#F5F5F5);
+    height:47px;
+    padding-top:10px;
+    padding-bottom:15px;
+    border-bottom: 1px solid #EEE;    
+}
+
+header div{
+    text-align: center;
+}
+
+header div h1{
+    color:#63666A;
+    margin:0px;
+    height:47px;
+    box-sizing: border-box;
+    padding-top:5px;
+    display:inline;
+    vertical-align: bottom;
+}
+
+/* Main Area */
+
+main{
+    display:block;
+}
+
+form{
+    margin-top:10px;
+}
+
+form>div+div{
+    margin-top:10px;
+}
+
+form input[type="text"], form select, form input[type="file"]{
+    width:100%;
+    box-sizing: border-box;
+    border:1px solid #AAAAAA;
+    padding:5px;
+}
+
+form input[type="text"]:focus, form select:focus{
+    border: 1px solid #4D90FE;
+}
+
+form input[type="button"]{
+    background-color: rgb(3, 169, 244);
+    color: white;
+    box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.37);
+    border: 0px none;
+    border-radius: 2px;
+    padding: 8px;
+}
+
+form input[type="button"]:hover{
+    cursor: pointer;
+    background-color: #039BE5;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.2), 0px 6px 10px rgba(0, 0, 0, 0.3);
+}
+
+form input[type="button"]:active{
+    background-color: #0288D1;
+    box-shadow: 0px 11px 7px rgba(0, 0, 0, 0.19), 0px 13px 25px rgba(0, 0, 0, 0.3);    
+}
+
+form input[type="button"]{
+    float:right;
+}
+
+.disabled-button{
+    background-color:#666 !important;
+}
+
+.disabled-button:hover,.disabled-button:active{
+    cursor:default !important;
+    background-color: #666 !important;
+    box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.37) !important;  
+}
+
+form input[type="radio"]{
+    margin-right:10px;
+}
+
+form>div.last-child{
+    position: absolute;
+    bottom:15px;
+    left:0px;
+    right:50px;
+}
+
+main>div:first-child{
+    text-align: center;
+}
+
+main>div>div{
+    text-align:left;
+}
+
+/* Advertising Container */
+
+#container-advertise{
+    padding:30px 50px;
+    padding-bottom:55px;
+    border: 1px solid #AAAAAA;    
+    box-shadow:0px 4px 16px rgba(0, 0, 0, 0.2);
+    font-size:14px;
+    width:320px;
+    display: inline-block;
+    vertical-align: top;
+    margin-left:20px;
+    position: relative;
+    /* Temp */    
+    /*display:none;*/  
+}
+
+#container-advertise label{
+    cursor: pointer;
+}
+
+#container-advertise label.disabled-text{
+    cursor: default;
+}
+
+#container-advertise label:hover{
+    color:rgb(0,120,215);
+}
+
+#container-advertise label.disabled-text:hover{
+    color:#666;
+}
+
+#container-advertise>form p{
+    font-size:12px;
+}
+
+#container-advertise>div:first-child>span+span{
+    float:right;
+}
+
+#container-advertise form input[type="button"]{
+    margin:0 2px;
+}
+
+#btnAdvertiseNext+*{
+    clear:both;
+}
+
+/* Basic Container */
+
+#container-basic{
+    padding:30px 50px;
+    padding-bottom:70px;
+    border: 1px solid #AAAAAA;    
+    box-shadow:0px 4px 16px rgba(0, 0, 0, 0.2);
+    font-size:14px;
+    width:320px;
+    display: inline-block;
+    vertical-align: top;
+    margin-left:20px;
+    position: relative;    
+}
+
+#container-basic>div:first-child>span+span{
+    float:right;
+}
+
+#container-basic input[type="button"]{
+    margin-left:10px;
+}
+
+#price-tag, #price-tag *{
+    box-sizing: border-box;
+}
+
+#price-tag{
+    position:relative;
+    margin-top:5px; 
+    padding:5px;
+    border-left:5px solid #FFE070;
+    border-top:1px solid #FFE070;
+    border-bottom:1px solid #FFE070;
+    border-right:1px solid #FFE070;
+    background-color:#FFF4CC;
+}
+
+#price-tag>div+div{
+    font-size:12px;
+}
+
+#price-tag>div+div>div{
+    margin-top: 3px;
+}
+
+#price-tag>div+div>div>div{
+    margin-left:10px;
+}
+
+#price-tag #ad-cost{
+    color:red;
+}
+
+#price-tag #spn-period{
+    color: #0099ff;
+}
+
+/* Design Container */
+
+#container-design{
+    display: none;
+    
+    position: relative;
+    box-sizing: border-box;
+    padding:30px 50px;
+    margin-top:20px;
+    margin-bottom: 20px;
+
+    border: 1px solid #AAAAAA;    
+    box-shadow:0px 4px 16px rgba(0, 0, 0, 0.2);    
+}
+
+#container-design * {
+    box-sizing: border-box;
+}
+
+#container-design>div:first-child>span+span{
+    float:right;
+}
+
+#container-design #footer-row{
+    position:relative;
+    text-align: right;
+}
+
+#container-design #footer-row>button{
+    padding-top: 8px;
+    padding-bottom:8px;
+    margin:auto 2px;
+    margin-top:12px;
+
+    background-color: rgb(3, 169, 244);
+    color: white;
+    box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.37);
+    border: 0px none;
+    border-radius: 2px;
+    cursor:pointer;
+}
+
+#container-design #footer-row>button:hover{
+    background-color: #039BE5;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.2), 0px 6px 10px rgba(0, 0, 0, 0.3);    
+}
+
+#container-design #footer-row>button:active{
+    background-color: #0288D1;
+    box-shadow: 0px 11px 7px rgba(0, 0, 0, 0.19), 0px 13px 25px rgba(0, 0, 0, 0.3);    
+}
+
+#container-design #footer-row> button+button{
+    /*float:right;*/
+}
+
+#container-design #footer-row>#btnNewAd{
+    background-color: #F0AD4E;
+}
+
+#container-design #footer-row>#btnNewAd:hover{
+    background-color:#EC971F;
+}
+
+#container-design #footer-row>#btnBilling{
+    background-color:#5CB85C;
+}
+
+#container-design #footer-row>#btnBilling:hover{
+    background-color:#398439;
+}
+
+#advertisements-container{
+    position: relative;
+    margin-top:10px;
+}
+
+#advertisements-container .advertisement{
+    position: relative;
+    padding-left:20px;
+    padding-bottom: 10px;
+    max-height:30px;
+
+    background-color:#EFEFEF;
+    font-size:14px;
+    border-radius: 2px;
+    overflow-y: hidden;
+    transition: max-height 1s,opacity 500ms;
+}
+
+#advertisements-container .advertisement+.advertisement{
+    margin-top:10px;
+}
+
+#advertisements-container .advertisement .ad-titlebar{
+    min-height:30px;
+    line-height: 30px;
+
+    cursor: pointer;
+}
+
+#advertisements-container .advertisement .ad-titlebar:hover{
+    color:#0099ff;
+}
+
+#advertisements-container .advertisement .ad-titlebar-shadow{
+    height:1px;
+    margin-top:3px;
+    margin-right: 20px;    
+
+    background-color: #cccccc;
+    box-shadow: 0px 0px 2px #cccccc;
+}
+
+#advertisements-container .advertisement .ad-titlebar .min-max-indicator{
+    margin-right:10px;
+}
+
+#advertisements-container .advertisement .ad-titlebar .ad-delete-btn{
+    display: none;
+    
+    float:right;
+    width:50px;
+    height:30px;
+
+    border: medium none;
+    font-size: 20px;
+    background: transparent;   
+    cursor: pointer;
+}
+
+#advertisements-container .advertisement .ad-titlebar .ad-delete-btn:hover{
+    background-color:rgb(232,17,35);
+    color:white;
+    border-top-right-radius: 2px;
+    border-bottom-right-radius: 2px;
+}
+
+#advertisements-container .advertisement .ad-body{
+    position: relative;
+    margin-right:20px;
+
+    font-size:12px;
+}
+
+#advertisements-container .advertisement .ad-body form input[type="text"], form select, form input[type="file"]{
+    padding:2px;
+}
+
+#advertisements-container .advertisement .ad-body .informative-tip{
+    display:none;
+
+    position: relative;
+    margin-top:5px;
+    padding:5px;
+
+    border:1px solid #FFE070;
+    border-left:5px solid #FFE070;
+
+    background-color:#FFF4CC;
+}
+
+#advertisements-container .advertisement .ad-body .informative-tip a{
+    color:blue;
+}
+
+#advertisements-container .advertisement .ad-body .warning-tip{
+    display:none;
+
+    position: relative;
+    margin-top:5px;
+    padding:5px;
+
+    border-left:1px solid #F08A81;
+    border-left:5px solid #F08A81;
+    background-color:#FAD7D4;    
+}
+
+#advertisements-container .advertisement .ad-body .preview{
+    position: relative;
+    margin-top:10px;
+}
+
+#advertisements-container .advertisement .ad-body .preview .preview-container{
+    position: relative;
+    min-width: 320px;
+    height:71px;
+    padding:3px;
+
+    background-color:#ffffff;
+    border:1px solid #369;
+}
+
+#advertisements-container .advertisement .ad-body .preview .preview-container .preview-text-container{
+    position: absolute;
+    top:3px;
+    left:70px;
+    bottom:3px;
+
+    overflow-y:hidden;
+    font-family: Arial,sans-serif;
+}
+
+#advertisements-container .advertisement .ad-body .preview .preview-container .preview-text-container a{
+    display: inline-block;
+
+    height: 20px;
+    overflow: hidden;    
+
+    color:blue;
+    font-family: Arial,sans-serif;
+    font-size:16px;
+}
+
+#advertisements-container .advertisement .ad-body .preview .preview-container .preview-text-container .preview-description{
+    display: inline-block;
+
+    height: 16px;
+    overflow: hidden;       
+
+    font-family: Arial,sans-serif;
+    font-size:13px;    
+}
+
+#advertisements-container .advertisement .ad-body .preview .preview-container .preview-text-container .preview-url{
+    display: inline-block;
+
+    height: 16px;
+    overflow: hidden;       
+
+    font-family: Arial,sans-serif;
+    font-size:13px;    
+    color:#008000;
+    text-decoration: underline;
+}
+
+/* Footer Area */
+
+footer{
+    position: absolute;
+    bottom:0px;
+    left:0px;
+    right:0px;
+    border-top: 1px solid #E4E4E4;
+    background-color:#F2F2F2;
+    background-image:-webkit-linear-gradient(top, #F5F5F5, #F2F2F2);
+    background-image:   -moz-linear-gradient(top, #F5F5F5, #F2F2F2);
+    background-image:     -o-linear-gradient(top, #F5F5F5, #F2F2F2);     
+    background-image: linear-gradient(to bottom, #F5F5F5, #F2F2F2);
+    line-height:30px;
+    font-size:small;
+    color:#666;
+    text-align: center;
+}
+
+#footer-nav{
+    margin:0;
+    padding:0;
+}
+
+#footer-nav a:link,a:visited{
+    text-decoration: none;
+    color:inherit;
+}
+
+#footer-nav a:hover{
+    text-decoration: underline;
+}
+
+#footer-nav a:active{
+    color:red;
+}
+
+#footer-nav li{
+    list-style-type: none;
+    display:inline;
+}
+
+#footer-nav li+li{
+    margin-left:10px;
+}
+
+#copyright{
+    padding-bottom:2px;
+}
+
+/* Media Queries */
+
+@media all and (max-width:1080px){
+
+    #container-design{
+        width:90%;
+        margin-left:auto;
+        margin-right:auto;
+        padding:20px;
+    }
+
+}
+
+@media all and (max-width:979px){
+
+    #container-advertise,#container-basic{
+        display: block;
+        margin:auto;
+        margin-top:20px;
+        /*  Temp */
+        /*display:none;*/ 
+    }    
+
+    body{
+        padding-bottom:83px;
+    }
+    
+    #container-design #footer-row{
+        text-align:center; 
+    }
+
+}
+
+@media all and (max-width:479px){
+
+    header div h1{
+        display:block;
+    }
+
+    header{
+        height:auto;
+    }
+
+    #container-advertise {
+        width:90%;
+        padding:5%;
+        padding-bottom:55px;
+        box-sizing: border-box;
+    }
+
+    #container-basic{
+        width:90%;
+        padding:5%;
+        box-sizing: border-box;
+        padding-bottom:70px;
+    }
+
+    form>div.last-child{    
+        right:6%;
+    }
+
+    /*=================================================================================
+     *  Container Design 
+     */
+
+    #container-design{
+        padding:10px;
+    } 
+
+    #advertisements-container .advertisement{
+        padding-left:10px;
+    }
+
+    #advertisements-container .advertisement .ad-titlebar .ad-delete-btn{
+        width:40px;
+    }
+
+    #advertisements-container .advertisement .ad-titlebar-shadow{
+        margin-right:10px;
+    }
+
+    #advertisements-container .advertisement .ad-body{
+        margin-right: 10px;
+    }
+
+    #advertisements-container .advertisement .ad-body .preview{
+        overflow-x: scroll;
+    }
+
+    /*
+     *  Container Design 
+     =================================================================================*/    
+
+}

@@ -1,0 +1,91 @@
+/*
+ *  Infoob (Socail Media Search Engine)
+ *  CSS for contact-us.php of advertising landing page
+ *  Developer: D.M.Ranjith Suranga (Sura-Boy)
+ *  Version: 1.0
+ *  Copyright © 2015 Infoob. All rights reserved.
+ */
+
+main *{
+	font-size: 13px;
+	color: #444;
+	line-height: 1.54;
+}
+
+main p{
+	position: relative;
+
+	margin:0px;
+	padding:0px;
+}
+
+
+form{
+	position: relative;
+	max-width:600px;
+}
+
+form input[type="text"]{
+	position: relative;
+	width:100%;
+	padding:5px;
+    border:1px solid #AAAAAA;	
+}
+
+form input[type="text"]:hover,form input[type="text"]:focus{
+	border: 1px solid #4D90FE;	
+}
+
+form textarea{
+	position: relative;
+	width:100%;
+	padding:5px;
+    border:1px solid #AAAAAA;		
+}
+
+form textarea:hover, form textarea:focus{
+	border: 1px solid #4D90FE;
+}
+
+form input[type="button"]{
+	position: relative;
+	width:70px;
+    padding: 8px;
+    border: 0px none;    
+
+    background-color: rgb(3, 169, 244);
+    color: white;
+    box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.37);
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+form input[type="button"]:hover{
+    cursor: pointer;
+    background-color: #039BE5;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.2), 0px 6px 10px rgba(0, 0, 0, 0.3);
+}
+
+form input[type="button"]:active{
+    background-color: #0288D1;
+    box-shadow: 0px 11px 7px rgba(0, 0, 0, 0.19), 0px 13px 25px rgba(0, 0, 0, 0.3);   	
+}
+
+form>div{
+	margin-bottom:10px;
+}
+
+.justify-text{
+	text-align:justify;
+}
+
+.validation-failed{
+	border:1px solid red !important;
+}
+
+p.justify-text{
+	margin-top:10px;
+	margin-bottom:10px;
+}
+
+

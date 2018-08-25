@@ -1,0 +1,229 @@
+/*
+ *  Infoob (Socail Media Search Engine)
+ *  Main CSS for Policies pages (Privacy, Terms)
+ *  Developer: D.M.Ranjith Suranga (Sura-Boy)
+ *  Version: 1.0
+ *  Copyright © 2015 Infoob. All rights reserved.
+*/
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700);
+
+html{    
+    height:100%;
+}
+
+body{
+    position: relative;
+    margin:0px;
+    padding:0px;
+    min-height: 100%;
+}
+
+*{
+    font-family: 'Open Sans', sans-serif;
+    box-sizing: border-box;
+    color: #444;
+}
+
+h1,h2,h3,p,ul,li{
+    margin:0px;
+    padding:0px;
+}
+
+.row{
+    max-width:1000px;   /* Site width */
+    margin:0 auto;
+    min-height:1px;
+}
+
+.row::before,  .row::after{
+    display: table;
+
+    content: " ";
+}
+
+.row::after{
+    clear:both;
+}
+
+/*=================================================================================
+ *  Header Section
+ */
+
+header #header-title{
+    display:inline;
+
+    position: relative;   
+    vertical-align: bottom;
+
+    font-size:26px;
+    color:#9FA2A6;
+    font-weight: 600;
+}
+
+header #header-title-row{
+    position: relative;
+    padding-top:10px;
+    margin-bottom:20px;
+}
+
+header #header-nav-row{
+    margin-bottom:10px;
+
+    font-size:14px;
+    line-height: 1.5;
+}
+
+header #header-nav-row ul{
+    position: relative;
+    margin-left:8px;
+    margin-right: 8px;
+}
+
+header #header-nav-row ul li{
+    display:inline-block;
+
+    position: relative;
+    padding-bottom:15px;
+
+    list-style-type: none;
+}
+
+header #header-nav-row ul li a:link{
+    text-decoration: none;
+}
+
+header #header-nav-row ul li a:hover{
+    color:#4285F4;
+}
+
+header #header-nav-row ul li.selected{ 
+    font-weight:700;                        
+    border-bottom: 2px solid #448AFF;
+}
+
+header #header-nav-row ul li+li{
+    margin-left:10px;
+}
+
+header{
+    position: relative;
+
+    box-shadow:0px 8px 6px -8px rgba(0, 0, 0, 0.3);
+}
+
+/*
+ *  End of Header Section
+ =================================================================================*/ 
+
+/*=================================================================================
+ *  Footer Section
+ */
+
+footer{
+    position: absolute;    
+    right:0px;
+    bottom:0px;
+    left:0px;
+    
+    line-height:30px;    
+
+    border-top:1px solid #EEE;
+    background-color:#F5F5F5;
+    font-size:11px;
+}
+
+footer ul{
+    display:inline-block;
+
+    position: relative;
+    margin: 0px;
+    padding:0px;
+
+    list-style-type: none;
+}
+
+footer ul li{
+    display:inline;
+
+    position: relative;
+}
+
+footer ul li+li:before{
+    padding:0 4px;
+
+    content : "·";
+}
+
+footer  ul li a:link{
+    text-decoration: none;
+}
+
+footer  ul li a:hover{
+    text-decoration: underline;
+}
+
+footer #copyright{
+    float:right;
+}
+
+
+/*
+ *  End of Footer Section
+ =================================================================================*/ 
+
+/*=================================================================================
+ *  Media Queries Section
+ */
+
+@media all and (max-width:1020px){
+
+    .row{
+        margin:0px 10px;
+    }
+
+}
+
+@media all and (max-width:767px){
+
+    header #header-nav-row{
+        text-align: center;
+    }
+
+    header img{
+        margin-bottom:2px;
+    }
+
+    header #header-title{
+        display: block;
+
+        margin-left:10px;
+        margin-right:10px;
+
+        font-size:12px;
+        font-weight:400;
+        border-top:1px solid #E1E1E1;
+    }
+
+}
+
+@media all and (max-width:479px){
+
+    footer{
+        text-align: center;
+    }
+
+    footer ul{
+        display: block;
+    }
+
+    footer #copyright{
+        display: block;
+        float:none;
+    }
+
+}
+
+/*
+ *  End of Media Queries Section
+ =================================================================================*/ 
